@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اقتصاد - بكالوريا</title>
+  <style>
+    :root {
+      --primary: #2A5C82;
+      --secondary: #4CAF8E;
+      --accent: #FFC857;
+      --background: #F8F9FA;
+      --text: #2D3436;
+    }
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #1E3A5F);
+      color: white;
+      padding: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+      background: rgba(255, 255, 255, 0.97);
+      padding: 1rem 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      margin: 0 0.5rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .section {
+      background: white;
+      border-radius: 15px;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+    }
+
+    .section h2 {
+      color: var(--primary);
+      margin: 0 0 1.5rem 0;
+      padding-bottom: 1rem;
+      border-bottom: 3px solid var(--accent);
+      font-size: 1.8rem;
+    }
+
+    .lesson {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      margin-bottom: 2rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    iframe:hover {
+      transform: scale(1.02);
+    }
+
+    /* أضف هذه الأنماط الجديدة للـ PDF */
+    .pdf-section {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: rgba(42, 92, 130, 0.05);
+      border-radius: 12px;
+      border: 2px dashed rgba(42, 92, 130, 0.2);
+    }
+
+    .pdf-list {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .pdf-item {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .pdf-item:hover {
+      transform: translateX(5px);
+    }
+
+    .pdf-item a {
+      color: #2A5C82;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      width: 100%;
+    }
+
+    .pdf-item i {
+      font-size: 1.5rem;
+      color: #FFC857;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      nav a {
+        margin: 0.2rem;
+        padding: 0.7rem 1rem;
+      }
+
+      .section {
+        padding: 1.5rem;
+      }
+
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- المحتوى الأصلي مع الحفاظ على جميع العناصر -->
+  <header>
+    <h1>مادة الاقتصاد</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="philosophy.html">الفلسفة</a>
+    <a href="math.html">الرياضيات</a>
+    <a href="accounting.html">المحاسبة</a>
+    <a href="business.html">تنظيم الشركات</a>
+  </nav>
+
+  <!-- جميع الأقسام الأصلية تبقى كما هي مع تحسين التنسيق -->
+  <div class="container">
+    <!-- لصق جميع أقسام .section الأصلية هنا -->
+    <!-- ... -->
+    <div class="section">
+      <h2>le marche </h2>
+
+      <!-- فيديو 1 -->
+      <div class="lesson">
+        <iframe src="https://www.youtube.com/embed/o-SGhgWmvfU?si=zWKnt1_2BchkXI_X" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/ymC4Mkdha-A?si=KxR0TfPOClFJJlr_" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/Oo_bDN3hV0s?si=LHVQQjGQXTe9IXu0" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+        <div class="section">
+          <h2>le marche</h2>
+
+          <!-- قسم PDF الجديد -->
+          <div class="pdf-section">
+            <h3 style="color: #2A5C82; margin-bottom: 1rem;">الملفات التعليمية <i class="fas fa-file-pdf"></i></h3>
+            <div class="pdf-list">
+              <div class="pdf-item">
+                <a href="pdf/marche.pdf" target="_blank">
+                  <i class="fas fa-file-pdf"></i>
+                  <span>(PDF)</span>
+                </a>
+              </div>
+
+              <div class="pdf-item">
+                <a href="pdf/le-marche-exercices.pdf" target="_blank">
+                  <i class="fas fa-file-pdf"></i>
+                  <span>تمارين تطبيقية (PDF)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="section">
+      <h2>le circut economique</h2>
+      <!-- فيديو 2 -->
+      <div class="lesson">
+
+        <iframe src="https://www.youtube.com/embed/revRnIKnZ-c?si=xbJZNj7RqICQ72YT" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/_YiwTctKubg?si=WCsmlP21xTu6aTCF" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <div class="section">
+          <h2>le cercuit economique</h2>
+
+          <!-- قسم PDF الجديد -->
+          <div class="pdf-section">
+            <h3 style="color: #2A5C82; margin-bottom: 1rem;">الملفات التعليمية <i class="fas fa-file-pdf"></i></h3>
+            <div class="pdf-list">
+              <div class="pdf-item">
+                <a href="pdf/Le_circuit_economique.pdf" target="_blank">
+                  <i class="fas fa-file-pdf"></i>
+                  <span>(PDF)</span>
+                </a>
+              </div>
+
+              <div class="pdf-item">
+                <a href="pdf/exercice_Le_circuit_economique.pdf" target="_blank">
+                  <i class="fas fa-file-pdf"></i>
+                  <span>تمارين تطبيقية (PDF)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- إضافة المزيد من الأقسام والفيديوهات حسب الحاجة -->
+    <div class="section">
+      <h2>les agregat de la comptabilite national </h2>
+      <!-- فيديو 1 -->
+      <div class="lesson">
+
+        <iframe src="https://www.youtube.com/embed/x6YhF7FvXJU?si=4BSfjfBji12fXcJa" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/Mef_T_Z5GaI?si=BjbtvocMTZwEvrv3" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/lETTdldtCpA?si=Gv50a5h2x0g6E0sy" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/cddoKwXq1Q8?si=8CECCXTN8TbbluUw" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <div class="section">
+          <h2>les agregat de la comptabilite national</h2>
+
+          <!-- قسم PDF الجديد -->
+          <div class="pdf-section">
+            <h3 style="color: #2A5C82; margin-bottom: 1rem;">الملفات التعليمية <i class="fas fa-file-pdf"></i></h3>
+            <div class="pdf-list">
+              <div class="pdf-item">
+                <a href="pdf/les_agregat.pdf" target="_blank">
+                  <i class="fas fa-file-pdf"></i>
+                  <span>(PDF)</span>
+                </a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <h2>la regularisation de marche </h2>
+      <!-- فيديو 2 -->
+      <div class="lesson">
+
+        <iframe src="https://www.youtube.com/embed/rtC8JnxEHCY?si=ATvvKcLzg5CrpyQu" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/LoNzsRrFLXc?si=vJcvhwTojBnj04PZ" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/PAuQv9T1eNw?si=ODiQQepN66bT09vK" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+      <h2>la regularisation de marche </h2>
+      <!-- قسم PDF الجديد -->
+      <div class="pdf-section">
+        <h3 style="color: #2A5C82; margin-bottom: 1rem;">الملفات التعليمية <i class="fas fa-file-pdf"></i></h3>
+        <div class="pdf-list">
+          <div class="pdf-item">
+            <a href="pdf/la_regularisation.pdf" target="_blank">
+              <i class="fas fa-file-pdf"></i>
+              <span>(PDF)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="section">
+    <h2>l'inflation </h2>
+    <!-- فيديو 2 -->
+    <div class="lesson">
+      <iframe src="https://www.youtube.com/embed/BPgdyjI5LIg?si=GBCrrXdosa8VYal7" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <iframe src="https://www.youtube.com/embed/mH2ZngyBmoI?si=0QIgf-nmwZh7f6FK" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <iframe src="https://www.youtube.com/embed/cXT1g2BLs9k?si=LF5VG368xkfEmXn0" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <p></p>
+    </div>
+    <h2>l'inflation </h2>
+    <!-- قسم PDF الجديد -->
+    <div class="pdf-section">
+      <h3 style="color: #2A5C82; margin-bottom: 1rem;">الملفات التعليمية <i class="fas fa-file-pdf"></i></h3>
+      <div class="pdf-list">
+        <div class="pdf-item">
+          <a href="pdf/inflation.pdf" target="_blank">
+            <i class="fas fa-file-pdf"></i>
+            <span>(PDF)</span>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  </div>
+  <div class="section">
+    <h2>le chomage</h2>
+    <!-- فيديو 2 -->
+    <div class="lesson">
+      <iframe src="https://www.youtube.com/embed/2sqLE2J3MlE?si=isHeQZll-dMoEYqK" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <iframe src="https://www.youtube.com/embed/JpWZe7gGF-4?si=IcWoLyooBsqHPJsW" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <iframe src="https://www.youtube.com/embed/noOYitLTvq8?si=tcV-RVAWXd-CTwTl" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <h2>le chomage </h2>
+      <!-- قسم PDF الجديد -->
+      <div class="pdf-section">
+        <h3 style="color: #2A5C82; margin-bottom: 1rem;">الملفات التعليمية <i class="fas fa-file-pdf"></i></h3>
+        <div class="pdf-list">
+          <div class="pdf-item">
+            <a href="chomage.pdf" target="_blank">
+              <i class="fas fa-file-pdf"></i>
+              <span>(PDF)</span>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+    <div class="section">
+      <h2>la politique economique </h2>
+      <!-- فيديو 2 -->
+      <div class="lesson">
+        <iframe src="https://www.youtube.com/embed/jbCosULMEMI?si=xwEqfjUGubTHIQeN" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <h2>la politique economique </h2>
+        <!-- قسم PDF الجديد -->
+        <div class="pdf-section">
+          <h3 style="color: #2A5C82; margin-bottom: 1rem;">الملفات التعليمية <i class="fas fa-file-pdf"></i></h3>
+          <div class="pdf-list">
+            <div class="pdf-item">
+              <a href="pdf/la-politique-economique.pdf" target="_blank">
+                <i class="fas fa-file-pdf"></i>
+                <span>(PDF)</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="section">
+      <h2>la politique monétaire </h2>
+      <!-- فيديو 2 -->
+      <div class="lesson">
+        <iframe src="https://www.youtube.com/embed/6du5ZNVLf58?si=Qxnd0UZbvbQkkt2-" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/TEYTuCXumuc?si=ZMg_GQgaGH2uwm_1" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/mRzF0_tqG0A?si=_rFJ6sLKtDSxBcgU" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/hsq5GvKJBlU?si=xUkt9Q0wQ90HnPyX" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/Mr9VFc9Uvt0?si=n_8lbCYBkdziZ3qv" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/NGc1wSqMNi8?si=iBmKOe-mpl88msT1" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <h2>lla politique monétaire</h2>
+        <!-- قسم PDF الجديد -->
+        <div class="pdf-section">
+          <h3 style="color: #2A5C82; margin-bottom: 1rem;">الملفات التعليمية <i class="fas fa-file-pdf"></i></h3>
+          <div class="pdf-list">
+            <div class="pdf-item">
+              <a href="pdf/la-politique-monetaire.pdf" target="_blank">
+                <i class="fas fa-file-pdf"></i>
+                <span>(PDF)</span>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <div class="section">
+    <h2>La politique budgétaire </h2>
+
+
+    <!-- فيديو 2 -->
+    <div class="lesson">
+
+      <iframe src="https://www.youtube.com/embed/PAZNDC3U1b8?si=J1oTXZA0UARz1n2b" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <iframe src="https://www.youtube.com/embed/v6kNXmrKYfU?si=WkITATbwvpLQJZ2P" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <iframe src="https://www.youtube.com/embed/2lPOayHU8dk?si=kDz3nZ4sOLYBby4f" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <iframe src="https://www.youtube.com/embed/ttY424LVUrY?si=ADNnm51BY7IKaI_Y" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <h2>la politique budgétaire.</h2>
+      <!-- قسم PDF الجديد -->
+      <div class="pdf-section">
+        <h3 style="color: #2A5C82; margin-bottom: 1rem;">الملفات التعليمية <i class="fas fa-file-pdf"></i></h3>
+        <div class="pdf-list">
+          <div class="pdf-item">
+            <a href="pdf/la-politique-budgetaire-resume-de-cours-1.pdf" target="_blank">
+              <i class="fas fa-file-pdf"></i>
+              <span>(PDF)</span>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div class="section">
+    <h2>Les échanges extérieurs</h2>
+
+
+    <!-- فيديو 2 -->
+    <div class="lesson">
+
+
+      <iframe src="https://www.youtube.com/embed/vNWE75htTmA?si=Iq6hW2UamPGv_6Cc" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <iframe src="https://www.youtube.com/embed/PHvk0K9oQQY?si=mB4BNuH0VcPHyU36" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <iframe src="https://www.youtube.com/embed/I1a9WH-KSs4?si=LxJ5bV05fwjU4unU" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <iframe src="https://www.youtube.com/embed/BYk3RaDN3fY?si=qtQzhgTJ6LuGk5G_" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      
+      <h2>les echange extérieurs </h2>
+      <!-- قسم PDF الجديد -->
+      <div class="pdf-section">
+        <h3 style="color: #2A5C82; margin-bottom: 1rem;">الملفات التعليمية <i class="fas fa-file-pdf"></i></h3>
+        <div class="pdf-list">
+          <div class="pdf-item">
+            <a href="pdf/les-echanges-exterieurs.pdf" target="_blank">
+              <i class="fas fa-file-pdf"></i>
+              <span>(PDF)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="section">
+    <h2> Développement</h2>
+    <!-- فيديو 2 -->
+    <div class="lesson">
+
+      <iframe src="https://www.youtube.com/embed/SSxpd7pXyoo?si=JjHc_zr-bkYG5xNT" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/0YENPbczMIU?si=AonOoh3-7NTVJCov" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/Glb-Rplr2k8?si=ah8Miz4YajDMe2Zh" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/5-BHP45HIBw?si=sQbVD3enkoLm8FfY" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/Xzd0WCLwvqw?si=38Tl9goQT0Uz4-kV" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/_h8VfMWRZyA?si=qdCxjd27t-u99sed" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/OXWCXu6f4IE?si=fUFf5QzAOywEAk5v" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/1xtvk3VAUjo?si=1VpjYyOUwu4UcaQc" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/cBNPD6cAPvs?si=B4Tt12Wp6lePfyJs" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/47lu-UCGLwo?si=1gD9U-RhKNgY429J" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/WPJkRmDDqo8?si=ZdE8Fq_S4G6x2a5O" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/GpR90fYd6PQ?si=0TCTqOG99awrMrMz" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/y-ccKFLDEIU?si=C3Vm-_8aSA0mHhlL" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/tIIjG-0oAYg?si=phd8RdHNOMzWyVs0" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/fIxtfaZfGtA?si=iJ3kAlZ1KyVIXpsw" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe src="https://www.youtube.com/embed/opapmsplUpA?si=0PXjME0vOtV1XJsJ" title="YouTube video player"
+        loading="lazy" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <h2>Développement </h2>
+      <!-- قسم PDF الجديد -->
+      <div class="pdf-section">
+        <h3 style="color: #2A5C82; margin-bottom: 1rem;">الملفات التعليمية <i class="fas fa-file-pdf"></i></h3>
+        <div class="pdf-list">
+          <div class="pdf-item">
+            <a href="pdf/developpement.pdf" target="_blank">
+              <i class="fas fa-file-pdf"></i>
+              <span>(PDF)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <h2>La mondialisation </h2>
+
+
+      <!-- فيديو 2 -->
+      <div class="lesson">
+
+        <iframe src="https://www.youtube.com/embed/6fl4CiJ-i2Y?si=P-5LvGQTc2lvtz0N" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+        <iframe src="https://www.youtube.com/embed/wFA0nUn0Dsw?si=i0tBCMWN5DJkRS_G" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+        <iframe src="https://www.youtube.com/embed/xYh2dEIHdyo?si=vk7yPy2PF-XXqrSm" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+        <iframe src="https://www.youtube.com/embed/lCTNwhdDuRc?si=-_41IWuMzKwASC-4" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <h2>la mondialisation </h2>
+        <!-- قسم PDF الجديد -->
+        <div class="pdf-section">
+          <h3 style="color: #2A5C82; margin-bottom: 1rem;">الملفات التعليمية <i class="fas fa-file-pdf"></i></h3>
+          <div class="pdf-list">
+            <div class="pdf-item">
+              <a href="pdf/la-mondialisation-resume-de-cours-1.pdf" target="_blank">
+                <i class="fas fa-file-pdf"></i>
+                <span>(PDF)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
